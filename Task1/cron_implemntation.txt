@@ -1,0 +1,14 @@
+How I implemented the Cronjob
+
+1) I wrote a simple shell script that echoes "I am Cron" and gave it executable permissions.
+
+2) I created a cronjob by writing crontab -e in my terminal.
+
+
+3) Inside the editor, the content was " 0 13 * * * /home/praba1110/Spider_sysad_tasks/task1s.sh >> /dev/pts/0 ", but the timeone was improper, so I added " TZ=Asia/Kolkata " in the beginning. 
+
+4) For the second part of the crontab script, I had to redirect my output to the terminal. For that I typed 'tty' in the terminal to find the pts file of the terminal.I got the output as '/dev/pts/0'
+
+5) At 1pm the cronjob got executed.
+
+

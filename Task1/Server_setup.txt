@@ -1,0 +1,14 @@
+1. I made a /var/ftp/pub/yum/rhel6/repodata directory
+2. I copied all the rpm packages and *comps*.xml from the dvd to repodata.
+3. I instaled deltarpm,python-deltarpm and createrepo rpm packages.
+4. I generated local repository in rhel6 directory.
+5. Then I created server.repo file in /etc/yum.repos.d and set the
+appropriate values.
+6. I had to remove the redhat's repo file from there, it didn't allow
+me to configure.
+7. Then I did a yum clean all and yum makecache.
+
+Finally,the server became ready .
+
+I tested the server by installing squid package before and after
+(Screenshots attached)
